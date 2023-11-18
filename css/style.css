@@ -32,6 +32,9 @@
   --neutral-5: #0c0c0d;
   --error-100: #ff2134;
 
+  /* Gradient */
+  --gradient: linear-gradient(270deg, #0f4392 0%, #001d3d 100%);
+
   /* Font Family */
   --font-primary: "Montserrat", sans-serif;
 
@@ -421,6 +424,103 @@ body {
 
 /* HERO
 ============================= */
+
+.hero-banner {
+  display: none;
+}
+
+.hero {
+  background-image: var(--gradient);
+  color: var(--neutral-90);
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: 130px 60px;
+  position: relative;
+}
+
+.hero-title {
+  color: var(--neutral-100);
+}
+
+.hero-text {
+  margin-block: 16px 32px;
+}
+
+.search-bar {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow-4);
+  display: grid;
+  gap: 8px;
+  padding: 8px;
+}
+
+.search-item {
+  color: var(--neutral-50);
+  position: relative;
+}
+
+.search-item .search-item-field {
+  border-radius: var(--radius-medium);
+  cursor: pointer;
+  height: 76px;
+  padding: 40px 16px 12px;
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.search-item .search-item-field:where(:hover, :focus) {
+  background-color: var(--neutral-95);
+}
+
+.search-item :where(.label, .material-symbols-rounded) {
+  pointer-events: none;
+  position: absolute;
+}
+
+.search-item .label {
+  top: 12px;
+  left: 16px;
+  color: var(--neutral-5);
+}
+
+.search-item .material-symbols-rounded {
+  top: 50%;
+  right: 16px;
+  translate: 0 -50%;
+  color: var(--primary-90);
+}
+
+.search-btn {
+  background: var(--primary-100);
+  color: var(--neutral-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  padding-inline: 24px;
+  gap: 12px;
+  border-radius: 12px;
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.search-btn:where(:hover, :focus) {
+  background-color: var(--primary-80);
+}
+
+.search-btn:where(:active, :focus-visible) {
+  background-color: var(--primary-70);
+}
+
+.hero .bg-pattern {
+  left: 25%;
+  min-height: 100%;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: -2;
+}
 
 /* PROPERTY
 ============================= */
