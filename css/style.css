@@ -160,8 +160,8 @@ body {
   background-color: var(--neutral-98);
   color: var(--neutral-5);
   font-size: var(--fs-body-medium);
-  line-height: var(--lh-body-medium);
   height: 300vh;
+  line-height: var(--lh-body-medium);
 }
 
 ::-webkit-scrollbar {
@@ -180,11 +180,96 @@ body {
 /* TYPOGRAPHY
 ============================= */
 
+.headline-large {
+  font-size: var(--fs-headline-large);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--traking-n-025);
+  line-height: var(--lh-headline-large);
+}
+
+.headline-medium {
+  font-size: var(--fs-headline-medium);
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-headline-medium);
+}
+
+.headline-small {
+  font-size: var(--fs-headline-small);
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-headline-small);
+}
+
+.title-large {
+  font-size: var(--fs-title-large);
+  font-weight: var(--weight-semiBold);
+  line-height: var(--lh-title-large);
+}
+
+.title-medium {
+  font-size: var(--fs-title-medium);
+  font-weight: var(--weight-semiBold);
+  line-height: var(--lh-title-medium);
+}
+
+.title-small {
+  font-size: var(--fs-title-small);
+  font-weight: var(--weight-semiBold);
+  line-height: var(--lh-title-small);
+}
+
+.body-large {
+  font-size: var(--fs-body-large);
+  font-weight: var(--weight-regular);
+  line-height: var(--lh-body-large);
+}
+
+.body-medium {
+  font-size: var(--fs-body-medium);
+  font-weight: var(--weight-regular);
+  line-height: var(--lh-body-medium);
+}
+
+.label-medium {
+  font-size: var(--fs-label-medium);
+  font-weight: var(--weight-semiBold);
+  letter-spacing: var(--traking-p-05);
+  line-height: var(--lh-label-medium);
+}
+
 /* REUSED STYLES
 ============================= */
 
-/* COMPONENT
+.material-symbols-rounded {
+  display: block;
+  font-variation-settings: "fill" 0, "wght" 400, "grad" 0, "opsz" 24;
+  height: 1em;
+  overflow: hidden;
+  width: 1em;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 580px;
+  padding-inline: 16px;
+  width: 100%;
+}
+
+/* COMPONENTS
 ============================= */
+
+/* Button */
+
+.btn {
+  align-items: center;
+  border-radius: var(--radius-full);
+  display: flex;
+  gap: 12px;
+  height: 40px;
+  justify-content: center;
+  max-width: max-content;
+  padding-inline: 24px;
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
 
 /* HEADER
 ============================= */
