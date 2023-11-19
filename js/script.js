@@ -22,3 +22,14 @@ window.addEventListener("scroll", () => {
     $header.classList.remove("active");
   }
 });
+
+// Add To Favorite Button
+// =============================
+
+const $favoriteBtns = document.querySelectorAll("[data-favorite-btn]");
+
+$favoriteBtns.forEach(($favoriteBtn) => {
+  $favoriteBtn.addEventListener("click", () => {
+    $favoriteBtn.classList.toggle("active");
+  });
+});
