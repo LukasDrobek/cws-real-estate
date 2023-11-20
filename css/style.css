@@ -720,6 +720,43 @@ body {
 /* VIDEO
 ============================= */
 
+.video-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(0deg, #0000004d, #0000004d),
+    url("../images/video-card.jpg");
+  border-radius: 32px;
+  display: grid;
+  height: 260px;
+  place-items: center;
+}
+
+.play-btn {
+  animation: pulse 1.5s var(--transition-easing-quick) forwards infinite;
+  background-color: var(--neutral-100);
+  border-radius: var(--radius-circle);
+  color: var(--primary-100);
+  display: grid;
+  height: 72px;
+  place-items: center;
+  width: 72px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #ffffff80;
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px #ffffff00;
+  }
+}
+
+.play-btn .material-symbols-rounded {
+  font-size: 4rem;
+  font-variation-settings: "FILL" 1;
+}
+
 /* STORY
 ============================= */
 
