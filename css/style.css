@@ -686,6 +686,37 @@ body {
 /* FEATURE
 ============================= */
 
+.feature-banner {
+  aspect-ratio: 3 / 2;
+  border-radius: var(--radius-extra-large);
+  overflow: hidden;
+}
+
+.feature-content {
+  padding: 24px 16px 0;
+}
+
+.feature-content .feature-text {
+  color: var(--neutral-30);
+  margin-block: 16px;
+}
+
+.feature-list {
+  display: grid;
+  gap: 12px;
+}
+
+.feature-item {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.feature-icon {
+  color: var(--primary-100);
+  font-size: 2.2rem;
+}
+
 /* VIDEO
 ============================= */
 
