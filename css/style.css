@@ -760,6 +760,100 @@ body {
 /* STORY
 ============================= */
 
+.story .section-subtitle {
+  color: var(--primary-100);
+}
+
+.story .section-title {
+  margin-block: 12px;
+}
+
+.avatar-list {
+  display: flex;
+}
+
+.avatar {
+  border-radius: var(--radius-full);
+  border: 3px solid var(--neutral-98);
+  height: 46px;
+  overflow: hidden;
+  position: relative;
+  width: 60px;
+}
+
+.avatar:not(:first-child) {
+  margin-inline-start: -10px;
+}
+
+.avatar .overlay-content {
+  background-color: #000000bf;
+  color: var(--neutral-100);
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+}
+
+.story .title-wrapper {
+  display: grid;
+  gap: 16px;
+}
+
+.story-list {
+  display: grid;
+  gap: 16px;
+}
+
+.story-card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--radius-large);
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.story-card:where(:hover, :focus-visible) {
+  scale: 0.99;
+}
+
+.story-card .overlay-content {
+  align-items: flex-end;
+  background: linear-gradient(180deg, #00000000 33.33%, #000000cc 100%);
+  color: var(--white);
+  display: flex;
+  inset: 0;
+  justify-content: space-between;
+  padding: 24px;
+  position: absolute;
+}
+
+.story-card .rating-wrapper {
+  align-items: center;
+  display: flex;
+  margin-block-start: 8px;
+}
+
+.story-card .rating-text {
+  margin-inline-start: 12px;
+  color: var(--neutral-80);
+}
+
+.story-card .material-symbols-rounded {
+  font-variation-settings: "FILL" 1;
+  color: var(--yellow);
+}
+
+.story-card .card-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-circle);
+  box-shadow: var(--shadow-3);
+  overflow: hidden;
+}
+
 /* FOOTER
 ============================= */
 
